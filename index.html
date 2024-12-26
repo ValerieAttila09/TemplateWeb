@@ -81,7 +81,7 @@
             justify-content: space-between;
         }
         .animKlik {
-            word-break: break-word;
+            min-width: 260px !important;
         }
         .animKlik:hover {
             animation: pulse 1.66s cubic-bezier(0.4, 0, 0.6, 1) infinite;
@@ -98,7 +98,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body class="bg-neutral-950 text-slate-100">
-    <nav class="border-neutral-200 bg-neutral-900 transition-all">
+    <nav class="border-neutral-200 dark:bg-neutral-900 transition-all">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 transition-all">
             <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="images/tailwind.png" class="h-8" alt="Flowbite Logo" />
@@ -516,8 +516,8 @@
             <br />
             <br />
         </div>
-        <div class="flex p-5 gap-8 relative overflow-x-auto">
-            <div class="animKlik text-nowrap hover:scale-105 transition duration-600 ease-out w-full bg-gradient-to-r from-slate-700 to-neutral-700 rounded-md p-3">
+        <div class="flex p-5 gap-8 relative overflow-x-auto ">
+            <div class="animKlik p-4 hover:scale-105 transition duration-600 ease-out bg-gradient-to-r from-slate-700 to-neutral-700 rounded-md p-3">
                 <h1 class="text-4xl font-bold">Free Package Services</h1>
                 <p class="font-serif font-bold text-3xl text-neutral-400">
                     $0.00<span class="text-sm font-semibold font-serif">/month</span>
@@ -590,7 +590,7 @@
                 </div>
 
             </div>
-            <div class="animKlik text-nowrap hover:scale-105 transition duration-600 ease-out w-full bg-gradient-to-r from-gray-200 to-slate-400 rounded-md p-3">
+            <div class="animKlik p-4 hover:scale-105 transition duration-600 ease-out w-full bg-gradient-to-r from-gray-200 to-slate-400 rounded-md p-3">
                 <h1 class="text-3xl font-bold text-neutral-600">Premium Package Services</h1>
                 <p class="font-serif font-bold text-3xl text-neutral-700">
                     $21.99<span class="text-sm font-semibold font-serif">/month</span>
@@ -655,7 +655,7 @@
                 <button type="button" id="pricingCardOne" class="block mx-auto bg-neutral-800 text-neutral-200 my-10 py-2 px-10 rounded-lg hover:bg-neutral-900 hover:scale-125 transition-all">Order</button>
 
             </div>
-            <div class="animKlik text-nowrap hover:scale-105 transition duration-600 ease-out w-full bg-gradient-to-r from-yellow-400 to-indigo-500 rounded-md p-3">
+            <div class="animKlik p-4 hover:scale-105 transition duration-600 ease-out w-full bg-gradient-to-r from-yellow-400 to-indigo-500 rounded-md p-3">
                 <h1 class="text-3xl font-bold text-neutral-800">Ultra Package Services</h1>
                 <p class="font-serif font-semibold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-500">
                     $34.99<span class="text-sm font-semibold font-serif">/month</span>
@@ -773,7 +773,7 @@
         </div>
     </div>
 
-    <footer class="bg-neutral-900 border-t-1 border border-neutral-600 border-b-0 border-l-0 border-r-0">
+    <footer class="bg-white dark:bg-neutral-900 border-t-1 border border-neutral-600 border-b-0 border-l-0 border-r-0">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
